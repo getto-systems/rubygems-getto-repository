@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["shun@getto.systems"]
   spec.email         = ["shun@getto.systems"]
 
-  spec.summary       = %q{validation and format repository}
-  spec.description   = %q{Validate parameters like strong-parameters(rails)}
+  spec.summary       = %q{paging helper}
+  spec.description   = %q{Repository helpers: Page}
   spec.homepage      = "https://github.com/getto-systems/getto-repository"
   spec.license       = "MIT"
 
