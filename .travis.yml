@@ -1,8 +1,12 @@
 sudo: false
 language: ruby
+cache: bundler
 rvm:
   - 2.5.1
 before_install: gem install bundler -v 1.16.2
+notifications:
+  slack:
+    secure: "zxLdcLe9Vb/HiuhMZssIP4iuemZ+sISFo2EM0NuAryku52iAXOspozyNt6JMny/erQ8huOsBO5hjXc4hgaozADeXmmc4boUb/ejeJ28Z3q4k9hSsOksQ1cLNXRaljuDoog/Lp5ul5Z1KN0H26Kt0zZHp+gIYZbsh3u39zmu/cZnbxZKpSNqvmTTR0ZB6scRh1f0XQDLAe/p0tObBb+u8Wd+nsIBW6GT17cUdheUfYJ0qRD04x3A1M7EtFNrFPllo9UkqqlzkVLDu/X4rtk87bKBqog3/TfMpTPxamiWZUzuUSCsPUa9k1UM17Wv+FZkhkCfZiACNma767FRAQL5/JnoJ7vnLa/R2k9WglyxR6HsWaHfvjNv0FJ1OhgsAjBtJEfYyZYxsCTjxIzCoa1DZxzyKxFQ9Yl3jxjMA4/RLqRCF/iSyn/Zwv0uHOtNGiwzjQTLbQpS0RZWUFKDSZw5wN8ZUCDKaEjSgRXu88Gwf7MA+Xwyq07SnasdZFwoOx4VR81MZfu7skdGW18HTjsTQhqtsOvtZn1xyhYnu9B5L4y/+KP+hS8pMqTKUTn8BC5LjYWFTe7FA51s1C1IIyXBidB3TDPKJlG6hofhmF0PMEQyyOPDrFHom4hcmsPBKbswd+A1R0xiuArKlqxHuHSmRXEZZSc1tcqQ9/Oim8PhCn1k="
 deploy:
   provider: rubygems
   gem: getto-repository
