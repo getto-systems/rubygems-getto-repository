@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{paging helper}
   spec.description   = %q{Repository helpers: Page}
-  spec.homepage      = "https://github.com/getto-systems/getto-repository"
+  spec.homepage      = "https://github.com/getto-systems/rubygems-getto-repository"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
